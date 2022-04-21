@@ -21,7 +21,7 @@
 			<div class="wrapper__body__game">
 				<img class="img__word" src="./images/word.png" alt="word.png">
 				<div class="game__title">끝말잇기</div>
-				<div id="endTalkWord" class="game__subtitle">제시어 : 뉴비즈코드</div>
+				<div id="endTalkWord" class="game__subtitle">제시어 : 싸이월드</div>
 				<div class="endtalk__game__inputs">
 					<input type="text" id="inputEndTalk" class="input__endtalk" placeholder="단어를 입력하세요.">
 					<button class="btn__endtalk" onclick="checkAnwser()">검색</button>
@@ -33,14 +33,14 @@
 				<div class="game__title">LOTTO</div>
 				<div class="game__subtitle">버튼을 누르세요.</div>
 				<div class="number__lotto">
-					<span class="num__1">3</span>
-					<span class="num__2">5</span>
-					<span class="num__3">10</span>
-					<span class="num__4">24</span>
-					<span class="num__5">30</span>
-					<span class="num__6">34</span>
+					<span id="lottoNum0" class="num__1">3</span>
+					<span id="lottoNum1" class="num__2">5</span>
+					<span id="lottoNum2" class="num__3">10</span>
+					<span id="lottoNum3" class="num__4">24</span>
+					<span id="lottoNum4" class="num__5">30</span>
+					<span id="lottoNum5" class="num__6">34</span>
 				</div>
-				<div class="btn__lotto">Button</div>
+				<div class="btn__lotto" onclick="getLottoNum()">Button</div>
 			</div>
 		</div>
 	</div>

@@ -48,10 +48,9 @@
 	flex-direction: column;
 }
 
-.img__music {
+.body__musics img {
 	width: 120px;
 	height: 120px;
-	background-color: #999;
 	margin-bottom: 10px;
 }
 
@@ -82,7 +81,93 @@
 .wrapper__footer {
 	width: 100%;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: column;
 	padding-top: 8px;
+}
+
+.wrapper__footer__header {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.wrapper__footer__body {
+	width: 100%;
+	height: 119px;
+	display: flex;
+	flex-direction: column;
+}
+
+.body__title {
+	width: 100%;
+	height: 20px;
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	/* justify-content: space-between; */
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #EEE;
+	margin-top: 10px;
+}
+
+.body__title span {
+	font-family: 'Malgun Gothic';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 13px;
+	color: #999999;
+}
+
+.body__title span:nth-child(2) {
+	margin-left: 24.5px;
+	margin-right: 20px;
+}
+
+.body__title span:nth-child(4) {
+	margin-left: 237px;
+}
+
+.body__detail {
+	width: 100%;
+	height: 20px;
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px dashed #999;
+	align-items: center;
+	padding-left: 20px;
+}
+
+.body__detail .num {
+	width: 31px;
+	font-family: 'Malgun Gothic';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 13px;
+	color: #000000;
+	margin-left: 31px;
+}
+
+.body__detail .music__name {
+	width: 254px;
+	font-family: 'Malgun Gothic';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 13px;
+	color: #0F465E;
+}
+
+.body__detail .artist {
+	width: 86px;
+	font-family: 'Malgun Gothic';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 13px;
+	color: #0F465E;
 }

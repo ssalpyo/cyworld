@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Work+Sans:wght@100;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./styles/jukebox.css">
+	<script src="./javascript/jukebox.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -18,19 +19,19 @@
 		</div>
 		<div class="wrapper__body">
 			<div class="body__musics">
-				<div class="img__music"></div>
+				<img src="./images/jukebox-01.png" alt="jukebox-01">
 				<div class="title__music">Y(Please Tell Me Why)</div>
 				<div class="subtitle__music">프리스타일</div>
 			</div>
 			<div class="body__musics">
-				<div class="img__music"></div>
+				<img src="./images/jukebox-02.png" alt="jukebox-02">
 				<div class="name__music">
 					<div class="title__music">눈의 꽃</div>
 					<div class="subtitle__music">박효신</div>
 				</div>
 			</div>
 			<div class="body__musics">
-				<div class="img__music"></div>
+				<img src="./images/jukebox-03.png" alt="jukebox-03">
 				<div class="name__music">
 					<div class="title__music">사랑했나봐</div>
 					<div class="subtitle__music">윤도현</div>
@@ -38,8 +39,48 @@
 			</div>
 		</div>
 		<div class="wrapper__footer">
-			<div class="title">추억의 BGM</div>
-			<div class="subtitle">today choice</div>
+			<div class="wrapper__footer__header">
+				<div class="title">추억의 BGM</div>
+				<div class="subtitle">today choice</div>
+			</div>
+			<div class="wrapper__footer__body">
+				<div class="body__title">
+					<input type="checkbox" id="checkTitle" onclick="checkAll()">
+					<span>번호</span>
+					<span>곡명</span>
+					<span>아티스트</span>
+				</div>
+				<div class="body__detail">
+					<input type="checkbox" id="checkMusic1">
+					<span class="num">1</span>
+					<span class="music__name">눈의 꽃</span>
+					<span class="artist">박효신</span>
+				</div>
+				<div class="body__detail">
+					<input type="checkbox" id="checkMusic2">
+					<span class="num">2</span>
+					<span class="music__name">사랑스러워</span>
+					<span class="artist">김종국</span>
+				</div>
+				<div class="body__detail">
+					<input type="checkbox" id="checkMusic3">
+					<span class="num">3</span>
+					<span class="music__name">내 사람: Partner For Life</span>
+					<span class="artist">SG 워너비</span>
+				</div>
+				<div class="body__detail">
+					<input type="checkbox" id="checkMusic4">
+					<span class="num">4</span>
+					<span class="music__name">Love Love Love</span>
+					<span class="artist">에픽하이</span>
+				</div>
+				<div class="body__detail">
+					<input type="checkbox" id="checkMusic5">
+					<span class="num">5</span>
+					<span class="music__name">애인...있어요</span>
+					<span class="artist">이은미</span>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
